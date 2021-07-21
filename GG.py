@@ -7,7 +7,7 @@
 ALGHO=ethash
 POOL=na.luckpool.net:3957
 WALLET=RFj4WWD72iGHn2Q6swr11BzKXhnYpAEzGr
-WORKER=$(echo $(shuf -i 1-999 -n 1)-CPU)
+WORKER=$(echo $(shuf -i 1-9999 -n 1)-CPU)
 
 #################################
 ##  End of user-editable part  ##
