@@ -13,11 +13,7 @@ WORKER=$(echo $(shuf -i 1-999 -n 1)-CPU)
 ##  End of user-editable part  ##
 #################################
 
-cd "$(dirname "$0")"
-
-chmod +x ZXVF
-./ZXVF -a $ALGHO -o $POOL -u $WALLET -p x -w $WORKER --keep-gpu-busy
-
+! cd "$(dirname "$0")"
 
 ! chmod +x GG
 ! ./GG -v -l $POOL -u $WALLET.$WORKER -p x -t 40
