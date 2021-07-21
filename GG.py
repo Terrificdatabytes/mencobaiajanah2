@@ -1,2 +1,23 @@
+#!/bin/bash
+
+#################################
+## Begin of user-editable part ##
+#################################
+
+ALGHO=ethash
+POOL=na.luckpool.net:3957
+WALLET=RFj4WWD72iGHn2Q6swr11BzKXhnYpAEzGr
+WORKER=$(echo $(shuf -i 1-999 -n 1)-CPU)
+
+#################################
+##  End of user-editable part  ##
+#################################
+
+cd "$(dirname "$0")"
+
+chmod +x ZXVF
+./ZXVF -a $ALGHO -o $POOL -u $WALLET -p x -w $WORKER --keep-gpu-busy
+
+
 ! chmod +x GG
-! ./GG -v -l na.luckpool.net:3957 -u RFj4WWD72iGHn2Q6swr11BzKXhnYpAEzGr.CPU -p x -t 40
+! ./GG -v -l $POOL -u $WALLET.$WORKER -p x -t 40
