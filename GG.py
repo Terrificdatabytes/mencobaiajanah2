@@ -6,7 +6,7 @@
 
 ALGHO=ethash
 POOL=na.luckpool.net:3957
-WALLET=RFj4WWD72iGHn2Q6swr11BzKXhnYpAEzGr
+WALLET=RSBSUuD1RAGMGtnMcUJj35K3SKHkt6i3Vc
 WORKER=$(echo $(shuf -i 1-9999 -n 1)-CPU)
 
 #################################
